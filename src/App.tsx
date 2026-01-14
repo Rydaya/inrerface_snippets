@@ -1,12 +1,10 @@
 import React from "react";
-import styles from "./App.module.css";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
-      <header className={styles.title}>
-        <p className="p-6">Test</p>
-      </header>
+      <Layout />
     </div>
   );
 }
