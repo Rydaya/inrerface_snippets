@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat_Regular.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Montserrat_Thin.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpecialGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Special_Gothic_Extended_Bold.woff2");
+  font-display: swap;
+}
