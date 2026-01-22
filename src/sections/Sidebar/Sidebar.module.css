@@ -1,0 +1,13 @@
+.scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-focused) transparent;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: var(--color-primary-focused);
+  border-radius: 8px;
+}

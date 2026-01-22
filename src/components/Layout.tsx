@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./Sidebar";
+import Sidebar from "../sections/Sidebar/Sidebar";
 
 const Layout: React.FC = () => {
   return (
