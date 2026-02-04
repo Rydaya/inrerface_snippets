@@ -3,13 +3,28 @@
   --color-primary-accent: #8a2be2;
   --color-primary-focused: #9370db;
 
+  /* Loader */
+  --color-bg-loader: rgba(224, 214, 207, 0.4);
+  --color-active-loader: #8a2be2;
+  --color-muted-loader: rgba(213, 207, 224, 0.73);
+
   /* Text */
-  --color-text-main: #696969;
+  --color-text-header: #8a2be2;
+  --color-text-body: #696969;
+  --color-text-productCard: #000000;
+  --color-text-brand: #8a2be2;
+
+  /* Button */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #696969;
+  --color-text-outline: #8a2be2;
   --color-text-focused: #ffffff;
-  --color-text-sidebar: #ffffff;
+  --color-button-primary: #8a2be2;
+  --color-button-secondary: #d5cfe0;
+  --color-button-focused: #6f23c0;
+  --color-button-outline: #ffffff;
 
   /* Backgrounds */
   --color-bg-main: #ffffff;
-  --color-bg-accent: #8a2be2;
   --color-bg-sidebar: #e6e6fa;
 }

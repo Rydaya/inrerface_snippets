@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Products } from "./pages";
-import Layout from "./components/Layout";
+import { Layout } from "./components";
 
 function App() {
   return (
