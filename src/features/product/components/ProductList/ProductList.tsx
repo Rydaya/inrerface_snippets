@@ -1,8 +1,8 @@
 import React from "react";
-import { useGetProductsQuery } from "../../api/productsApi";
-import { ProductCard } from "../../components";
+import { useGetProductsQuery } from "../../api";
+import ProductCard from "../ProductCard/ProductCard";
 
-export const ProductsList: React.FC = () => {
+const ProductsList: React.FC = () => {
   const { data } = useGetProductsQuery();
 
   return (
@@ -13,3 +13,5 @@ export const ProductsList: React.FC = () => {
     </div>
   );
 };
+
+export default ProductsList;
