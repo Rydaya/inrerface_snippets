@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../store";
 import { NavLink } from "react-router-dom";
-import Contact from "../../components/Contact";
+import { Contact } from "../../components";
 import { ArrowDown, ArrowUp } from "../../assets/icons";
 import styles from "./Sidebar.module.css";
 import clsx from "clsx";
@@ -11,10 +11,8 @@ const Sidebar: React.FC = () => {
   const navItems = useSelector((state: RootState) => state.nav.items);
 
   return (
-    <div className="w-72 bg-bg-sidebar shadow-lg p-5 flex flex-col gap-3">
-      <h2 className="font-gothic font-bold text-bg-accent text-3xl text-center">
-        Snippets
-      </h2>
+    <div className="w-[20vw] bg-bg-sidebar shadow-lg p-5 flex flex-col gap-3 fixed left-0 top-0 h-screen">
+      <h2 className="heading-page text-3xl text-center">Snippets</h2>
       <Contact />
       <div
         className={clsx(
@@ -30,8 +28,8 @@ const Sidebar: React.FC = () => {
               clsx(
                 "p-3 font-semibold rounded-xl flex justify-between items-center w-full text-left transition",
                 isActive
-                  ? "bg-accent text-focused"
-                  : "text-sidebar hover:bg-accent hover:text-focused",
+                  ? "bg-button-primary text-button-textPimary"
+                  : "hover:bg-button-primary hover:text-button-textPimary",
               )
             }
           >

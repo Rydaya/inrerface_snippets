@@ -11,15 +11,32 @@ module.exports = {
         accent: "var(--color-primary-accent)",
         focused: "var(--color-text-focused)",
 
+        loader: {
+          bg: "var(--color-bg-loader)",
+          active: "var(--color-active-loader)",
+          muted: "var(--color-muted-loader)",
+        },
+
         text: {
-          main: "var(--color-text-main)",
-          focused: "var(--color-text-focused)",
-          sidebar: "var(--color-text-sidebar)",
+          header: "var(--color-text-header)",
+          body: "var(--color-text-body)",
+          brand: "var(--color-text-brand)",
+          productCard: "var(--color-text-productCard)",
+        },
+
+        button: {
+          textPimary: "var(--color-text-primary)",
+          textSecondary: "var(--color-text-secondary)",
+          textFocused: "var(--color-text-focused)",
+          textOutline: "var(--color-text-outline)",
+          primary: "var(--color-button-primary)",
+          secondary: "var(--color-button-secondary)",
+          focused: "var(--color-button-focused)",
+          outline: "var(--color-button-outline)",
         },
 
         bg: {
           main: "var(--color-bg-main)",
-          accent: "var(--color-bg-accent)",
           sidebar: "var(--color-bg-sidebar)",
         },
       },

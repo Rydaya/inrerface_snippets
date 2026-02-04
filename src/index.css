@@ -4,16 +4,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .heading-page {
+    @apply font-gothic font-bold text-text-header text-2xl;
+  }
+  .button {
+    @apply p-3 font-semibold rounded-xl flex justify-center items-center transition;
+  }
+  .button-primary {
+    @apply bg-button-primary hover:bg-button-focused text-button-textPimary;
+  }
+  .button-secondary {
+    @apply bg-button-secondary hover:bg-button-focused text-button-textSecondary hover:text-button-textFocused;
+  }
+  .button-outline {
+    @apply outline outline-1 bg-transparent hover:bg-button-focused text-button-textOutline hover:text-button-textFocused;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Montserrat";
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--color-text-main);
-}
-
-code {
-  font-family:
-    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: var(--color-text-body);
 }
