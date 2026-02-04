@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonProps, ButtonType, ButtonVariant } from "../../types";
+import { ButtonProps, ButtonType, ButtonVariant } from "./Button.types";
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
 

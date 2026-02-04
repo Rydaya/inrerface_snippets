@@ -1,8 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import type { RootState } from "../store";
-import { Button } from "../components";
-import { ButtonType, ButtonVariant } from "../types";
+import type { RootState } from "../../../store";
+import Button from "../Button";
 
 const Error: React.FC = () => {
   const homePath = useSelector((state: RootState) =>
@@ -20,8 +19,8 @@ const Error: React.FC = () => {
       {homePath && (
         <Button
           className="w-[50%]"
-          type={ButtonType.NavLink}
-          variant={ButtonVariant.Primary}
+          type="navLink"
+          variant="primary"
           data={homePath}
         >
           {homePath.title}

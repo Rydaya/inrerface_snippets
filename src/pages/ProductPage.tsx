@@ -1,0 +1,21 @@
+import React from "react";
+import Error from "../shared/ui/Error";
+import Loader from "../shared/ui/Loader";
+import { useGetProductsQuery } from "../features/product/api";
+import ProductsList from "../features/product/components/ProductList/ProductList";
+
+const ProductPage: React.FC = () => {
+  const { isLoading, error } = useGetProductsQuery();
+
+  if (isLoading) return <Loader />;
+  if (error) return <Error />;
+
+  return (
+    <div className="p-6">
+      <h1 className="heading-page mb-5">Products</h1>
+      <ProductsList />
+    </div>
+  );
+};
+
+export default ProductPage;

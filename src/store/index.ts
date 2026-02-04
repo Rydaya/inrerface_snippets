@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import navReducer from "./navSlice";
-import { productsApi } from "../api/productsApi";
+import { productsApi } from "../features/product/api";
 
 export const store = configureStore({
   reducer: {

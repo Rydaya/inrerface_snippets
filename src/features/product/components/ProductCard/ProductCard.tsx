@@ -1,14 +1,9 @@
 import React from "react";
-import type { Product } from "../../types/product";
-import { Button } from "../../components";
-import { Star } from "../../assets/icons";
+import type { ProductCardProps } from "./ProductCard.types";
+import Button from "../../../../shared/ui/Button";
+import { Star } from "../../../../shared/assets/icons";
 
-interface Props {
-  product: Product;
-}
-
-const ProductCard: React.FC<Props> = ({ product }) => {
-  console.log(product);
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="p-4 rounded-lg shadow-lg transition flex flex-col gap-5">
       <div className="h-48 flex items-center justify-center overflow-hidden mt-6 mb-1">
