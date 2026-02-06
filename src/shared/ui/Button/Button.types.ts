@@ -22,6 +22,6 @@ export interface ButtonProps {
   variant?: ButtonVariant | string;
   icon?: React.ReactNode;
   data?: ButtonData;
-  onClick?: (data: ButtonData) => void;
+  onClick?: (...args: any[]) => void;
   children: React.ReactNode;
 }

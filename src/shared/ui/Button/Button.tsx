@@ -18,8 +18,8 @@ const Button: React.FC<ButtonProps> = ({
   children,
 }) => {
   const handleClick = (e: React.MouseEvent) => {
-    if (onClick && data) {
-      onClick(data);
+    if (onClick) {
+      onClick(e);
     } else if (type === ButtonType.Link && data?.url) {
       window.location.href = data.url;
     } else {
