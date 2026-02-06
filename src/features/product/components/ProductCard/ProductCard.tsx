@@ -2,10 +2,21 @@ import React from "react";
 import type { ProductCardProps } from "./ProductCard.types";
 import Button from "../../../../shared/ui/Button";
 import { Star } from "../../../../shared/assets/icons";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const navigate = useNavigate();
+
+  const handleBtnCardClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    alert("Sorry, it's not real online shop");
+  };
+
   return (
-    <div className="p-4 rounded-lg shadow-lg transition flex flex-col gap-5">
+    <div
+      onClick={() => navigate(`/products/${product.id}`)}
+      className="p-4 rounded-lg shadow-lg transition flex flex-col gap-5"
+    >
       <div className="h-48 flex items-center justify-center overflow-hidden mt-6 mb-1">
         <img
           src={product.image}
@@ -30,7 +41,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <p className="font-bold text-3xl text-text-productCard">
             ${product.price}
           </p>
-          <Button type="button" variant="primary" className="w-[100px]">
+          <Button
+            onClick={handleBtnCardClick}
+            type="button"
+            variant="primary"
+            className="w-[100px]"
+          >
             {" "}
             Buy
           </Button>
