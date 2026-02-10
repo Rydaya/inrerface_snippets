@@ -29,10 +29,12 @@ module.exports = {
           textSecondary: "var(--color-text-secondary)",
           textFocused: "var(--color-text-focused)",
           textOutline: "var(--color-text-outline)",
+          textDisabled: "var(--color-text-disabled)",
           primary: "var(--color-button-primary)",
           secondary: "var(--color-button-secondary)",
           focused: "var(--color-button-focused)",
           outline: "var(--color-button-outline)",
+          disabled: "var(--color-button-disabled)",
         },
 
         bg: {

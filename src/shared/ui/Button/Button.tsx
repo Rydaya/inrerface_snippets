@@ -7,6 +7,7 @@ const variantClasses: Record<ButtonVariant | string, string> = {
   [ButtonVariant.Primary]: "button-primary",
   [ButtonVariant.Secondary]: "button-secondary",
   [ButtonVariant.Outline]: "button-outline",
+  [ButtonVariant.Disabled]: "button-disabled",
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   data,
   onClick,
   children,
+  disabled,
 }) => {
   const handleClick = (e: React.MouseEvent) => {
     if (onClick) {
@@ -34,6 +36,7 @@ const Button: React.FC<ButtonProps> = ({
           className={clsx(className, variantClasses[variant], "button")}
           type={type}
           onClick={handleClick}
+          disabled={disabled}
         >
           {children || data?.title}
         </button>
