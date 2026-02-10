@@ -19,10 +19,12 @@
   --color-text-secondary: #696969;
   --color-text-outline: #8a2be2;
   --color-text-focused: #ffffff;
+  --color-text-disabled: #696969;
   --color-button-primary: #8a2be2;
   --color-button-secondary: #d5cfe0;
   --color-button-focused: #6f23c0;
   --color-button-outline: #ffffff;
+  --color-button-disabled: #d5cfe0;
 
   /* Backgrounds */
   --color-bg-main: #ffffff;

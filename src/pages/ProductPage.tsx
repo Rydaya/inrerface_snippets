@@ -1,10 +1,9 @@
 import React from "react";
-import Error from "../shared/ui/Error";
-import Loader from "../shared/ui/Loader";
+import { useParams } from "react-router-dom";
 import { useGetProductsQuery } from "../features/product/api";
 import ProductsList from "../features/product/components/ProductList";
-import { useParams } from "react-router-dom";
 import ProductCardDetail from "../features/product/components/ProductCardDetail";
+import { Loader, Error } from "../shared/ui";
 
 const ProductPage: React.FC = () => {
   const { isLoading, error } = useGetProductsQuery();

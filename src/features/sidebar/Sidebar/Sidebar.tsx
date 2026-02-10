@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../../../store";
 import { NavLink } from "react-router-dom";
 import Contact from "../../../shared/ui/Contact";
-import { ArrowDown, ArrowUp } from "../../../shared/assets/icons";
+import { Arrow } from "../../../shared/assets/icons";
 import styles from "./Sidebar.module.css";
 import clsx from "clsx";
 
@@ -36,11 +36,10 @@ const Sidebar: React.FC = () => {
             {({ isActive }) => (
               <>
                 {item.title}
-                {isActive ? (
-                  <ArrowUp className="w-4 h-4" />
-                ) : (
-                  <ArrowDown className="w-4 h-4" />
-                )}
+                <Arrow
+                  direction={isActive ? "up" : "down"}
+                  className="w-4 h-4"
+                />
               </>
             )}
           </NavLink>

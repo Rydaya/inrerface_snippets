@@ -8,6 +8,7 @@ export enum ButtonVariant {
   Primary = "primary",
   Secondary = "secondary",
   Outline = "outline",
+  Disabled = "disabled",
 }
 
 export interface ButtonData {
@@ -24,4 +25,5 @@ export interface ButtonProps {
   data?: ButtonData;
   onClick?: (...args: any[]) => void;
   children: React.ReactNode;
+  disabled?: boolean;
 }
