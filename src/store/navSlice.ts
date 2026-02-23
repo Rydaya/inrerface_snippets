@@ -15,6 +15,7 @@ const initialState: NavState = {
     { id: "hvbglhgahreughikera", title: "Home", path: "/" },
     { id: "nadjklbvaerfjkvbnaekj", title: "Products", path: "/products" },
     { id: "vjnakjvndjbvajnveanv", title: "Pagination", path: "/pagination" },
+    { id: "rghvkeabgkaehgknj", title: "Carousel", path: "/carousel" },
   ],
 };
 

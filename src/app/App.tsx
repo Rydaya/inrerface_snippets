@@ -1,6 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage, ProductPage, ProductPagePagination } from "../pages";
+import {
+  HomePage,
+  ProductPage,
+  ProductPagePagination,
+  CarouselPage,
+} from "../pages";
 import Layout from "./layout/Layout";
 
 function App() {
@@ -12,6 +17,7 @@ function App() {
           <Route path="/products" element={<ProductPage />} />
           <Route path="/products/:productId" element={<ProductPage />} />
           <Route path="/pagination" element={<ProductPagePagination />} />
+          <Route path="/carousel" element={<CarouselPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

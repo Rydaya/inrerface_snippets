@@ -15,13 +15,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div
       onClick={() => navigate(`/products/${product.id}`)}
-      className="p-4 rounded-lg shadow-lg transition flex flex-col gap-5"
+      className="p-4 h-full rounded-lg shadow-lg transition flex flex-col gap-5"
     >
-      <div className="h-48 flex items-center justify-center overflow-hidden mt-6 mb-1">
+      <div className="flex justify-center items-center h-48 overflow-hidden mt-6 mb-1">
         <img
           src={product.image}
           alt={product.title}
-          className="h-full w-full object-contain"
+          className="max-h-full max-w-full object-contain"
         />
       </div>
       <div className="flex-1 flex flex-col gap-4 justify-between">
