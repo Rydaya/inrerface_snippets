@@ -1,0 +1,29 @@
+.customSwiper {
+  height: 500px;
+  padding: 20px 48px;
+}
+
+:global(.swiper-slide) {
+  height: 100%;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  padding: 10px 0;
+  color: var(--color-text-primary);
+  background-color: var(--color-primary-accent);
+  border-radius: 5px;
+}
+
+:global(.swiper-pagination-horizontal) {
+  bottom: -7px !important;
+}
+
+:global(.swiper-scrollbar) {
+  height: 7px;
+}
+
+:global(.swiper-pagination-bullet-active),
+:global(.swiper-scrollbar-drag) {
+  background: var(--color-primary-accent);
+}

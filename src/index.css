@@ -33,3 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-text-body);
 }
+
+input[type="checkbox"] {
+  accent-color: var(--color-primary-accent);
+}

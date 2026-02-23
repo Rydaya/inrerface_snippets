@@ -11,7 +11,7 @@ const ProductPagePagination: React.FC = () => {
   return (
     <div className="p-6">
       <>
-        <h1 className="heading-page mb-5">Products</h1>
+        <h1 className="heading-page mb-5">Products Pagination</h1>
         <ProductsList withPagination />
       </>
     </div>
