@@ -22,7 +22,7 @@ const Arrow: React.FC<ArrowProps> = ({ className, direction = "up" }) => {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      className={clsx("w-5 h-5", className)} // 👈 размер по умолчанию
+      className={clsx("w-5 h-5", className)}
     >
       <path
         strokeLinecap="round"
