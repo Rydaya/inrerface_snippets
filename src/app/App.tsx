@@ -6,6 +6,7 @@ import {
   ProductPagePagination,
   CarouselPage,
   AccordionPage,
+  TabsPage,
 } from "../pages";
 import Layout from "./layout/Layout";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/pagination" element={<ProductPagePagination />} />
           <Route path="/carousel" element={<CarouselPage />} />
           <Route path="/accordion" element={<AccordionPage />} />
+          <Route path="/tabs" element={<TabsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
