@@ -3,10 +3,14 @@ import { Arrow } from "../../assets/icons";
 import { AccordionProps } from "./Accordion.types";
 
 const Accordion: React.FC<AccordionProps> = ({ items, title }) => {
-  const [activeId, setActiveId] = useState<string | number | null>(null);
+  const [activeIds, setActiveIds] = useState<(string | number)[]>([]);
 
   const toggleItem = (id: string | number) => {
-    setActiveId((prev) => (prev === id ? null : id));
+    setActiveIds((prev) =>
+      prev.includes(id)
+        ? prev.filter((itemId) => itemId !== id)
+        : [...prev, id],
+    );
   };
 
   return (
@@ -19,7 +23,7 @@ const Accordion: React.FC<AccordionProps> = ({ items, title }) => {
 
       <div className="flex flex-col">
         {items.map((item) => {
-          const isOpen = activeId === item.id;
+          const isOpen = activeIds.includes(item.id);
 
           return (
             <div key={item.id} className="overflow-hidde border-b">
