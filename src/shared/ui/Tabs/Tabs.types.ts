@@ -6,4 +6,5 @@ export interface TabsItem {
 
 export interface TabsProps {
   items: TabsItem[];
+  withDescription?: boolean;
 }
