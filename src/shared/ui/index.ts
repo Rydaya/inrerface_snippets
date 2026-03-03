@@ -4,3 +4,4 @@ export { default as Error } from "./Error";
 export { default as Contact } from "./Contact";
 export { default as Accordion } from "./Accordion";
 export { default as Tabs } from "./Tabs";
+export { default as Dropdown } from "./Dropdown";
