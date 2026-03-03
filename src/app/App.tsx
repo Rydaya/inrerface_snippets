@@ -7,6 +7,7 @@ import {
   CarouselPage,
   AccordionPage,
   TabsPage,
+  DropdownPage,
 } from "../pages";
 import Layout from "./layout/Layout";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/carousel" element={<CarouselPage />} />
           <Route path="/accordion" element={<AccordionPage />} />
           <Route path="/tabs" element={<TabsPage />} />
+          <Route path="/dropdown" element={<DropdownPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
