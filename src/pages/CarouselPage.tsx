@@ -20,7 +20,7 @@ const CarouselPage: React.FC = () => {
   return (
     <div className="p-6">
       <div className="flex flex-col gap-3">
-        <h1 className="heading-page">Carousel</h1>
+        <h1 className="heading-page mb-5">Carousel</h1>
         <CarouselOptions options={options} setOptions={setOptions} />
         {products && <Carousel products={products} options={options} />}
       </div>

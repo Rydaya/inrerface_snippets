@@ -11,7 +11,7 @@ const AccordionPage: React.FC = () => {
   return (
     <div className="p-6">
       <h1 className="heading-page mb-5">Accordion</h1>
-      <div className="w-[70%] m-auto">
+      <div className="w-[100%] sm:w-[90%] lg:w-[70%] m-auto">
         <Accordion items={items} title="FAQ's" />
       </div>
     </div>
