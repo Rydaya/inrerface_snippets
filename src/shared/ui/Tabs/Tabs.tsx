@@ -13,11 +13,11 @@ const Tabs: React.FC<TabsProps> = ({ items, withDescription }) => {
 
   return (
     <div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 text-sm sm:text-md">
         {items?.map((item) => (
           <button
             onClick={() => toggleItem(item.id)}
-            className={clsx("flex-1 px-4 py-2", {
+            className={clsx("flex-1 px-2 py-1 sm:px-4 sm:py-2", {
               "bg-accent border-accent text-button-textPimary":
                 activeId === item.id && withDescription,
               "border-b-4 border-accent":

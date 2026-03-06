@@ -20,6 +20,11 @@ const Carousel: React.FC<CarouselProps> = ({ products, options }) => {
     spaceBetween: 16,
     slidesPerView: 4,
     navigation: true,
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 },
+    },
   };
 
   if (options?.pagination) {

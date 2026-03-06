@@ -1,10 +1,8 @@
 .customSwiper {
   height: 500px;
+  max-width: calc(100vw - 48px);
   padding: 20px 48px;
-}
-
-:global(.swiper-slide) {
-  height: 100%;
+  box-sizing: border-box;
 }
 
 :global(.swiper-button-next),

@@ -9,8 +9,8 @@ const DropdownPage: React.FC = () => {
 
   return (
     <div className="p-6">
-      <h1 className="heading-page mb-5">Dropdown</h1>
-      <div className="w-[40%] m-auto">
+      <h1 className="heading-page mb-10 lg:mb-5">Dropdown</h1>
+      <div className="w-[90%] lg:w-[40%] m-auto">
         <Dropdown items={items} />
       </div>
     </div>

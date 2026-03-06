@@ -23,15 +23,15 @@ const ProductCardDetail: React.FC<ProductCardDetailProps> = ({ productId }) => {
         </p>
         <p className="text-sm first-letter:uppercase">{data?.category}</p>
       </div>
-      <div className="flex gap-5 w-full">
-        <div className="w-[40%] flex items-center justify-center overflow-hidden">
+      <div className="flex flex-col items-center sm:items-start sm:flex-row gap-5 w-full">
+        <div className="w-[60%] sm:w-[40%] flex items-center justify-center overflow-hidden">
           <img
             src={data?.image}
             alt={data?.title}
             className="h-full w-full object-contain"
           />
         </div>
-        <div className="w-[60%] flex flex-col">
+        <div className="w-full sm:w-[60%] flex flex-col">
           <div className="flex mb-1 gap-[2px] items-center">
             <Star className="fill-accent" />
             <p className="text-sm text-text-productCard">

@@ -37,15 +37,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             {product.title}
           </h3>
         </div>
-        <div className="flex justify-between items-end">
-          <p className="font-bold text-3xl text-text-productCard">
+        <div className="flex justify-between gap-1 flex-col xl:flex-row xl:items-center">
+          <p className="font-bold text-2xl text-text-productCard">
             ${product.price}
           </p>
           <Button
             onClick={handleBtnCardClick}
             type="button"
             variant="primary"
-            className="w-[100px]"
+            className="xl:w-[100px]"
           >
             {" "}
             Buy

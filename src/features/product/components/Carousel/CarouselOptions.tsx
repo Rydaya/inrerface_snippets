@@ -22,7 +22,7 @@ const CarouselOptions: React.FC<CarouselOptionsProps> = ({
     });
   };
   return (
-    <div className="flex gap-8 items-center">
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-8 sm:items-center">
       {checkboxConfig.map(({ key, label }) => (
         <label key={key} className="flex gap-1 items-center">
           <input
