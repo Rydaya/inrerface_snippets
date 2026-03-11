@@ -19,6 +19,11 @@ const initialState: NavState = {
     { id: "uvfheidughveurgha", title: "Accordion", path: "/accordion" },
     { id: "kjrngvkjarbjkbnarejk", title: "Tabs", path: "/tabs" },
     { id: "bvgksebvgjkrebvjkz", title: "Dropdown", path: "/dropdown" },
+    {
+      id: "fjbehkrbverkghkjrwe",
+      title: "Click Overlay",
+      path: "/clickOverlay",
+    },
   ],
 };
 
