@@ -17,8 +17,8 @@ const Menu: React.FC<IconProps> = ({ className }) => {
         x2="21"
         y2="6"
         stroke="#8a2be2"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <line
         x1="3"
@@ -26,8 +26,8 @@ const Menu: React.FC<IconProps> = ({ className }) => {
         x2="21"
         y2="12"
         stroke="#8a2be2"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <line
         x1="3"
@@ -35,8 +35,8 @@ const Menu: React.FC<IconProps> = ({ className }) => {
         x2="21"
         y2="18"
         stroke="#8a2be2"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
