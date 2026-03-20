@@ -9,7 +9,7 @@ module.exports = {
       },
       colors: {
         accent: "var(--color-primary-accent)",
-        focused: "var(--color-text-focused)",
+        focused: "var(--color-primary-focused)",
 
         loader: {
           bg: "var(--color-bg-loader)",
@@ -22,6 +22,7 @@ module.exports = {
           body: "var(--color-text-body)",
           brand: "var(--color-text-brand)",
           productCard: "var(--color-text-productCard)",
+          accent: "var(--color-text-accent)",
         },
 
         button: {

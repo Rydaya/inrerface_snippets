@@ -1,7 +1,7 @@
 import React from "react";
 import { IconProps } from "../../types/icons";
 
-const Menu: React.FC<IconProps> = ({ className }) => {
+const MenuIcon: React.FC<IconProps> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -42,4 +42,4 @@ const Menu: React.FC<IconProps> = ({ className }) => {
   );
 };
 
-export default Menu;
+export default MenuIcon;

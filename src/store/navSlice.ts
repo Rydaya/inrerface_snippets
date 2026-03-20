@@ -24,6 +24,11 @@ const initialState: NavState = {
       title: "Click Overlay",
       path: "/clickOverlay",
     },
+    {
+      id: "dvbhakfjvhbakjdbvkjae",
+      title: "Menu",
+      path: "/menu",
+    },
   ],
 };
 

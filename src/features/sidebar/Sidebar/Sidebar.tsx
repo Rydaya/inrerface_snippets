@@ -2,11 +2,12 @@ import React from "react";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../../store";
 import { NavLink } from "react-router-dom";
-import Contact from "../../../shared/ui/Contact";
-import { Arrow, Menu } from "../../../shared/assets/icons";
+import { Contact, Drawer } from "../../../shared/ui";
+import { Arrow } from "../../../shared/assets/icons";
 import styles from "./Sidebar.module.css";
 import clsx from "clsx";
 import { SidebarProps } from "./Sidebar.types";
+import { DrawerType } from "../../../shared/ui/Drawer/Drawer.types";
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
   const navItems = useSelector((state: RootState) => state.nav.items);
@@ -15,27 +16,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(true)}
-        className="lg:hidden z-50 absolute top-5 right-5"
-      >
-        <Menu />
-      </button>
-
-      {isOpen && (
-        <div
-          onClick={closeSidebar}
-          className="fixed inset-0 bg-black/40 z-40 lg:hidden"
-        />
-      )}
-
-      <div
-        className={clsx(
-          "fixed top-0 left-0 h-screen w-[70vw] w-[80vw] md:w-[300px] lg:w-[20vw] bg-bg-sidebar shadow-lg p-5 flex flex-col gap-3 transition-transform duration-300 z-50",
-          isOpen ? "translate-x-0" : "-translate-x-full",
-          "lg:translate-x-0",
-        )}
-      >
+      <Drawer isOpen={isOpen} setIsOpen={setIsOpen} type={DrawerType.Sidebar}>
         <h2 className="heading-page text-xl lg:text-3xl text-center">
           Snippets
         </h2>
@@ -74,7 +55,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
             </NavLink>
           ))}
         </div>
-      </div>
+      </Drawer>
     </>
   );
 };
