@@ -9,6 +9,7 @@ import {
   TabsPage,
   DropdownPage,
   ClickOverlayPage,
+  MenuPage,
 } from "../pages";
 import Layout from "./layout/Layout";
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/tabs" element={<TabsPage />} />
           <Route path="/dropdown" element={<DropdownPage />} />
           <Route path="/clickOverlay" element={<ClickOverlayPage />} />
+          <Route path="/menu" element={<MenuPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
