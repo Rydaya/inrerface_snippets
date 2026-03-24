@@ -22,10 +22,11 @@
   --color-text-focused: #ffffff;
   --color-text-disabled: #696969;
   --color-button-primary: #8a2be2;
-  --color-button-secondary: #d5cfe0;
+  --color-button-secondary: #bfa8e5;
   --color-button-focused: #6f23c0;
+  --color-button-secondary-focused: #8a2be2;
   --color-button-outline: #ffffff;
-  --color-button-disabled: #d5cfe0;
+  --color-button-disabled: #a0a0a0;
 
   /* Backgrounds */
   --color-bg-main: #ffffff;

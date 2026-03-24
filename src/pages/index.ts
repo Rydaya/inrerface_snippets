@@ -7,3 +7,4 @@ export { default as TabsPage } from "./TabsPage";
 export { default as DropdownPage } from "./DropdownPage";
 export { default as ClickOverlayPage } from "./ClickOverlayPage";
 export { default as MenuPage } from "./MenuPage";
+export { default as ButtonPage } from "./ButtonPage";
