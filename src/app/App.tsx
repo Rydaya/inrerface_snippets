@@ -10,6 +10,7 @@ import {
   DropdownPage,
   ClickOverlayPage,
   MenuPage,
+  ButtonPage,
 } from "../pages";
 import Layout from "./layout/Layout";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductPage />} />
           <Route path="/products/:productId" element={<ProductPage />} />
+          <Route path="/buttons" element={<ButtonPage />} />
           <Route path="/pagination" element={<ProductPagePagination />} />
           <Route path="/carousel" element={<CarouselPage />} />
           <Route path="/accordion" element={<AccordionPage />} />

@@ -33,6 +33,7 @@ module.exports = {
           textDisabled: "var(--color-text-disabled)",
           primary: "var(--color-button-primary)",
           secondary: "var(--color-button-secondary)",
+          secondaryFocused: "var(--color-button-secondary-focused)",
           focused: "var(--color-button-focused)",
           outline: "var(--color-button-outline)",
           disabled: "var(--color-button-disabled)",

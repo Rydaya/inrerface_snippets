@@ -9,6 +9,7 @@ export enum ButtonVariant {
   Secondary = "secondary",
   Outline = "outline",
   Disabled = "disabled",
+  Link = "link",
 }
 
 export interface ButtonData {
